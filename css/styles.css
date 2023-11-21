@@ -77,6 +77,7 @@ body {
 .logo-link {
   color: #2e2f42;
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current::after {
   content: "";
@@ -153,6 +154,7 @@ body {
   display: block;
   padding-bottom: 24px;
   padding-top: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-contacts-menu:hover,
@@ -304,6 +306,7 @@ body {
 }
 .title-container {
   padding: 32px 0;
+  margin-bottom: 8px;
 }
 .list-team-container {
   text-align: center;
@@ -342,7 +345,7 @@ body {
 }
 .team-link:hover,
 .team-link:focus {
-  background-color: #404BBF;
+  background-color: #404bbf;
 }
 /*Our Portfolio*/
 .our-portfolio {
@@ -360,11 +363,39 @@ body {
 }
 .list-portfolio {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: auto;
+}
+.list-portfolio:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.list-portfolio:hover .portfolio-text,
+.list-portfolio:focus .portfolio-text {
+  transform: translateY(0%);
 }
 .portfilio-container {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+}
+.portfolio-images {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-text {
+  position: absolute;
+  top: auto;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*Footer*/
@@ -445,4 +476,5 @@ body {
 }
 .end-link-icons:hover,
 .end-link-icons:focus {
-  background-color: #31D0AA;
+  background-color: #31d0aa;
+}
