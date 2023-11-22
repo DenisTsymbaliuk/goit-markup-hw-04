@@ -39,7 +39,9 @@ body {
   background-color: #fff;
   letter-spacing: 0.02em;
 }
-
+.section {
+  padding: 120px 0 120px 0 120px;
+}
 .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -85,7 +87,7 @@ body {
   left: 0;
   bottom: -1px;
   display: block;
-  width: 48px;
+  width: 100%;
   height: 4px;
   border-radius: 2px;
   background-color: #404bbf;
@@ -239,18 +241,6 @@ body {
 .benefits-title-list:last-child {
   margin-right: 0;
 }
-.sectoin-title {
-  color: #2e2f42;
-  text-align: center;
-  font-family: "Roboto";
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-}
-
 .list-title {
   margin-bottom: 8px;
   color: #2e2f42;
@@ -307,7 +297,6 @@ body {
 }
 .title-container {
   padding: 32px 0;
-  margin-bottom: 8px;
 }
 .list-team-container {
   text-align: center;
@@ -355,6 +344,12 @@ body {
 }
 .sectoin-title-portfolio {
   margin-bottom: 72px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 .title-portfolio {
   display: flex;
