@@ -21,7 +21,9 @@ ol {
   padding-left: 0;
   list-style-type: none;
 }
-
+img {
+  display: block;
+}
 .container {
   width: 1158px;
   margin-left: auto;
@@ -311,7 +313,6 @@ body {
 .menu-team-icons {
   justify-content: center;
   gap: 24px;
-  margin-bottom: 32px;
   margin-top: 8px;
   display: flex;
   align-items: center;
